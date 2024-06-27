@@ -7,7 +7,7 @@ on:
 
 
 ci: # ci using Branches from Workspace 'web_analytics_starter_kit'
-   uses: ci_template.yml
+   uses: .github/workflows/ci_template.yml
    with:
       data_project_dir: tinybird
    secrets:
