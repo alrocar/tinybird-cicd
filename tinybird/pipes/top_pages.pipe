@@ -29,7 +29,7 @@ SQL >
             {% else %} and date <= today()
             {% end %}
         group by pathname
-        order by visits desc
+        order by visits asc
         limit {{ Int32(skip, 0) }},{{ Int32(limit, 50) }}
 
 
